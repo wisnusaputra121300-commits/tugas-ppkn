@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kuis PPKn</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6d28d9, #2563eb);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #5b21b6;
+}
+
+.subjudul {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0 15px;
+    border: 2px solid #c4b5fd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.question {
+    background: #f5f3ff;
+    margin-top: 18px;
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.option {
+    display: block;
+    background: white;
+    padding: 11px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#hasil {
+    display: none;
+}
+
+.kartu {
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+}
+
+.nilai {
+    background: white;
+    color: #5b21b6;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.info {
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🇮🇩 Kuis PPKn</h1>
+
+<div class="subjudul">
+Hubungan Pancasila dengan NKRI
+</div>
+
+<!-- DATA SISWA -->
+<div id="dataSiswa">
+
+<label><b>Nama</b></label>
+<input type="text" id="nama" placeholder="Masukkan nama">
+
+<label><b>Kelas</b></label>
+<input type="text" id="kelas" placeholder="Contoh: VIII A">
+
+</div>
+
+<!-- SOAL -->
+<div id="soal">
+
+<div class="question">
+<p>1. Pancasila memiliki hubungan yang erat dengan NKRI karena Pancasila berfungsi sebagai ...</p>
+
+<label class="option">
+<input type="radio" name="q1" value="A">
+A. Dasar negara dan pedoman kehidupan berbangsa
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="B">
+B. Lambang negara
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="C">
+C. Lagu kebangsaan
+</label>
+
+<label class="option">
+<input type="radio" name="q1" value="D">
+D. Peraturan daerah
+</label>
+</div>
+
+
+<div class="question">
+<p>2. Salah satu contoh penerapan nilai Pancasila untuk menjaga keutuhan NKRI adalah ...</p>
+
+<label class="option">
+<input type="radio" name="q2" value="A">
+A. Mementingkan kepentingan kelompok
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="B">
+B. Menghargai perbedaan suku dan budaya
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="C">
+C. Menolak pendapat orang lain
+</label>
+
+<label class="option">
+<input type="radio" name="q2" value="D">
+D. Membeda-bedakan teman
+</label>
+</div>
+
+
+<div class="question">
+<p>3. Semboyan Bhinneka Tunggal Ika mendukung keutuhan NKRI karena mengajarkan ...</p>
+
+<label class="option">
+<input type="radio" name="q3" value="A">
+A. Persaingan antardaerah
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="B">
+B. Persatuan dalam keberagaman
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="C">
+C. Kesamaan semua budaya
+</label>
+
+<label class="option">
+<input type="radio" name="q3" value="D">
+D. Kebebasan tanpa aturan
+</label>
+</div>
+
+
+<div class="question">
+<p>4. Sikap yang sesuai dengan sila ketiga Pancasila adalah ...</p>
+
+<label class="option">
+<input type="radio" name="q4" value="A">
+A. Mengutamakan persatuan dan kesatuan
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="B">
+B. Mengutamakan kepentingan pribadi
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="C">
+C. Memaksakan kehendak
+</label>
+
+<label class="option">
+<input type="radio" name="q4" value="D">
+D. Menghindari kerja sama
+</label>
+</div>
+
+
+<div class="question">
+<p>5. Hubungan Pancasila dengan NKRI dapat terlihat melalui ...</p>
+
+<label class="option">
+<input type="radio" name="q5" value="A">
+A. Gotong royong dan menjaga persatuan
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="B">
+B. Konflik antarkelompok
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="C">
+C. Tidak peduli terhadap lingkungan
+</label>
+
+<label class="option">
+<input type="radio" name="q5" value="D">
+D. Mengutamakan daerah sendiri
+</label>
+</div>
+
+
+<div class="question">
+<p>6. Jika terjadi perbedaan pendapat dalam kelompok, sikap yang sesuai Pancasila adalah ...</p>
+
+<label class="option">
+<input type="radio" name="q6" value="A">
+A. Memaksakan pendapat
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="B">
+B. Meninggalkan kelompok
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="C">
+C. Bermusyawarah untuk mencapai kesepakatan
+</label>
+
+<label class="option">
+<input type="radio" name="q6" value="D">
+D. Menolak semua pendapat
+</label>
+</div>
+
+
+<div class="question">
+<p>7. Pancasila dapat menjadi pemersatu bangsa Indonesia karena ...</p>
+
+<label class="option">
+<input type="radio" name="q7" value="A">
+A. Hanya berlaku untuk kelompok tertentu
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="B">
+B. Mengandung nilai yang dapat diterapkan seluruh warga negara
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="C">
+C. Menghapus keberagaman masyarakat
+</label>
+
+<label class="option">
+<input type="radio" name="q7" value="D">
+D. Mengutamakan satu daerah
+</label>
+</div>
+
+
+<div class="question">
+<p>8. Contoh tindakan siswa yang ikut menjaga keutuhan NKRI adalah ...</p>
+
+<label class="option">
+<input type="radio" name="q8" value="A">
+A. Mengejek budaya daerah lain
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="B">
+B. Bertengkar karena perbedaan
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="C">
+C. Menghormati teman yang berbeda suku dan agama
+</label>
+
+<label class="option">
+<input type="radio" name="q8" value="D">
+D. Menyebarkan berita yang belum diketahui kebenarannya
+</label>
+</div>
+
+
+<div class="question">
+<p>9. Nilai keadilan sosial dapat mendukung keutuhan NKRI dengan cara ...</p>
+
+<label class="option">
+<input type="radio" name="q9" value="A">
+A. Menciptakan perlakuan yang adil bagi masyarakat
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="B">
+B. Mengutamakan orang yang memiliki kekuasaan
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="C">
+C. Membatasi hak masyarakat tertentu
+</label>
+
+<label class="option">
+<input type="radio" name="q9" value="D">
+D. Membeda-bedakan warga negara
+</label>
+</div>
+
+
+<div class="question">
+<p>10. Kesimpulan yang tepat mengenai hubungan Pancasila dengan NKRI adalah ...</p>
+
+<label class="option">
+<input type="radio" name="q10" value="A">
+A. Pancasila dan NKRI tidak memiliki hubungan
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="B">
+B. Pancasila menjadi dasar dan pedoman dalam menjaga persatuan NKRI
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="C">
+C. Pancasila hanya digunakan dalam kegiatan sekolah
+</label>
+
+<label class="option">
+<input type="radio" name="q10" value="D">
+D. NKRI hanya berdasarkan kebudayaan daerah tertentu
+</label>
+</div>
+
+<button type="button" onclick="selesaiKuis()">
+✅ SELESAI & LIHAT NILAI
+</button>
+
+</div>
+
+
+<!-- HASIL -->
+<div id="hasil"></div>
+
+</div>
+
+
+<script>
+
+function selesaiKuis() {
+
+    var nama = document.getElementById("nama").value.trim();
+    var kelas = document.getElementById("kelas").value.trim();
+
+    if (nama === "" || kelas === "") {
+        alert("Nama dan kelas harus diisi!");
+        return;
+    }
+
+    var kunci = [
+        "A",
+        "B",
+        "B",
+        "A",
+        "A",
+        "C",
+        "B",
+        "C",
+        "A",
+        "B"
+    ];
+
+    var benar = 0;
+
+    for (var i = 1; i <= 10; i++) {
+
+        var jawaban = document.querySelector(
+            'input[name="q' + i + '"]:checked'
+        );
+
+        if (jawaban !== null) {
+
+            if (jawaban.value === kunci[i - 1]) {
+                benar++;
+            }
+
+        }
+    }
+
+    var nilai = benar * 10;
+
+    /* HILANGKAN DATA DAN SOAL */
+    document.getElementById("dataSiswa").style.display = "none";
+    document.getElementById("soal").style.display = "none";
+
+    /* TAMPILKAN KARTU NILAI */
+    var hasil = document.getElementById("hasil");
+
+    hasil.style.display = "block";
+
+    hasil.innerHTML =
+        '<div class="kartu">' +
+
+        '<h2>🎓 HASIL TUGAS</h2>' +
+
+        '<div class="info">' +
+        '<b>Nama:</b> ' + nama + '<br>' +
+        '<b>Kelas:</b> ' + kelas +
+        '</div>' +
+
+        '<p>Jumlah Jawaban Benar</p>' +
+
+        '<div class="nilai">' +
+        benar + ' / 10' +
+        '</div>' +
+
+        '<p>Nilai Kamu</p>' +
+
+        '<div class="nilai">' +
+        nilai +
+        '</div>' +
+
+        '<p>🇮🇩 Hubungan Pancasila dengan NKRI</p>' +
+
+        '</div>' +
+
+        '<button onclick="location.reload()">' +
+        '🔄 KERJAKAN LAGI' +
+        '</button>';
+
+    window.scrollTo(0, 0);
+}
+
+</script>
+
+</body>
+</html>
